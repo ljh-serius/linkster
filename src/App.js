@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Box, Typography, List, ListItem, ListItemText, Link } from '@mui/material';
 
-function App() {
+const LinksComponent = () => {
+  const linksData = [
+    {
+      category: "YouTube Channels",
+      links: [
+        { name: "CS 701 - R&D Conundrums", url: "https://www.youtube.com/@CS701-RDConundrums-x4h" },
+        { name: "Decks & Wheels", url: "https://www.youtube.com/@DecksWheels-m1x" },
+        { name: "Vibrant Alternative Joy", url: "https://www.youtube.com/channel/UCZ0NtZQkrfheUg3BCpcLq8A" },
+        { name: "Embassy of Love", url: "https://www.youtube.com/@EmbassyofLove-f6n" },
+      ],
+    },
+    {
+      category: "Medium",
+      links: [
+        { name: "CSRD Conundrums - Medium", url: "https://medium.com/@csrd-conundrums" },
+      ],
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={{ padding: 2 }}>
+      <Typography variant="h4" gutterBottom>
+        Links
+      </Typography>
+      {linksData.map((category, index) => (
+        <Box key={index} sx={{ marginBottom: 4 }}>
+          <Typography variant="h5" gutterBottom>
+            {category.category}
+          </Typography>
+          <List>
+            {category.links.map((link, idx) => (
+              <ListItem key={idx} sx={{ paddingLeft: 0 }}>
+                <ListItemText
+                  primary={
+                    <Link href={link.url} target="_blank" rel="noopener" underline="hover">
+                      {link.name}
+                    </Link>
+                  }
+                />
+              </ListItem>
+            ))}
+          </List>
+        </Box>
+      ))}
+    </Box>
   );
-}
+};
 
-export default App;
+export default LinksComponent;
