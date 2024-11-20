@@ -11,8 +11,7 @@ const LinksComponent = () => {
         { name: "Vibrant Alternative Joy (Art, Music, Guitar)", url: "https://www.youtube.com/channel/UCZ0NtZQkrfheUg3BCpcLq8A" },
         { name: "Embassy of Love (Philosophy, Spirituality and Religions)", url: "https://www.youtube.com/@EmbassyofLove-f6n" },
         { name: "Apostrophe (Politics)", url: "https://www.youtube.com/@Apostrophe-r2t" },
-        { name: "Proleptic Anemora (LifeStyle)", url: "https://www.youtube.com/@ProlepticAnemoia-t7p" },
-        
+        { name: "Proleptic Anemora (LifeStyle)", url: "https://www.youtube.com/@ProlepticAnemoia-t7p" }
       ],
     },
     {
