@@ -7,9 +7,12 @@ const LinksComponent = () => {
       category: "YouTube Channels",
       links: [
         { name: "CS 701 - R&D Conundrums", url: "https://www.youtube.com/@CS701-RDConundrums-x4h" },
-        { name: "Decks & Wheels", url: "https://www.youtube.com/@DecksWheels-m1x" },
-        { name: "Vibrant Alternative Joy", url: "https://www.youtube.com/channel/UCZ0NtZQkrfheUg3BCpcLq8A" },
-        { name: "Embassy of Love", url: "https://www.youtube.com/@EmbassyofLove-f6n" },
+        { name: "Decks & Wheels (Skateboarding, Health, Gym'", url: "https://www.youtube.com/@DecksWheels-m1x" },
+        { name: "Vibrant Alternative Joy (Art, Music, Guitar)", url: "https://www.youtube.com/channel/UCZ0NtZQkrfheUg3BCpcLq8A" },
+        { name: "Embassy of Love (Philosophy, Spirituality and Religions)", url: "https://www.youtube.com/@EmbassyofLove-f6n" },
+        { name: "Apostrophe (Politics)", url: "https://www.youtube.com/@Apostrophe-r2t" },
+        { name: "Proleptic Anemora (LifeStyle)", url: "https://www.youtube.com/@ProlepticAnemoia-t7p" },
+        
       ],
     },
     {
